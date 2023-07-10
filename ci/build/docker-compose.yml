@@ -1,0 +1,11 @@
+version: '3.11'
+
+services:
+  simple_file_storage_api:
+    image: simple_file_storage_api_image
+    container_name: simple_file_storage_api_container
+    environment:
+      SFSA_APP_STORAGE_PATH: /app/storage
+      SFSA_APP_PORT: 8080
+    ports:
+      - 8080:8080
